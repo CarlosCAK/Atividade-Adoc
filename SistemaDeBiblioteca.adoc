@@ -28,7 +28,7 @@ O TaskFlow oferece uma variedade de recursos para facilitar o gerenciamento de t
 * **JWT (JSON Web Tokens):** Utilizado para garantir a segurança no processo de autenticação e autorização de usuários.
 
 == 🎮 Como Executar
-1. **Clone o repositório**:
+1.**Clone o repositório**:
 Clone o repositório para o seu ambiente local com o comando
 
 [source,sh]
@@ -37,7 +37,7 @@ Clone o repositório para o seu ambiente local com o comando
 git clone https://github.com/usuario/sistema-biblioteca.git
 ----
 
-2. **Instale as Dependências do Frontend**:
+2.**Instale as Dependências do Frontend**:
 Navegue até o diretório do frontend e instale as dependências com npm:
 
 [source,sh]
@@ -49,7 +49,7 @@ npm install
 
 ----
 
-3. **Instale as Dependências do Backend**:
+3.**Instale as Dependências do Backend**:
 Navegue até o diretório do backend e instale as dependências com Maven:
 
 [source,sh]
@@ -61,7 +61,7 @@ mvn install
 
 ----
 
-4. **Configuração do Banco de Dados**:
+4.**Configuração do Banco de Dados**:
 Crie um banco de dados MySQL e configure as credenciais no arquivo application.properties do backend. Em seguida, execute as migrações para criar as tabelas necessárias:
 
 [source,sh]
@@ -74,7 +74,7 @@ spring.datasource.password=sua_senha
 
 ----
 
-5. **Inicie o Servidor Backend**:
+5.**Inicie o Servidor Backend**:
 Inicie o servidor do backend com o comando:
 
 [source,sh]
@@ -86,7 +86,7 @@ mvn spring-boot:run
 ----
 
 
-6. **Inicie o Servidor Frontend**:
+6.**Inicie o Servidor Frontend**:
 Inicie o servidor do frontend com o comando:
 
 [source,sh]
@@ -97,9 +97,45 @@ ng serve
 
 ----
 
+7.**Acesse a Aplicação**:
+Abra o navegador e acesse a aplicação na URL: 
 
-7. **Acesse a Aplicação**:
-Abra o navegador e acesse a aplicação na URL: http://localhost:4200.
+[source,sh]
+
+----
+
+http://localhost:4200
+
+----
+
+== 📚 Documentação da API
+
+A API do Sistema de Gerenciamento de Biblioteca foi documentada utilizando Swagger, permitindo uma visualização interativa e detalhada de todos os endpoints disponíveis. Abaixo estão alguns dos endpoints principais:
+
+* *GET /api/books*: Retorna todos os livros disponíveis.
+* *POST /api/loans*: Cria um novo empréstimo de livro.
+* *GET /api/loans/{id}*: Obtém os detalhes de um empréstimo específico.
+* *PUT /api/loans/{id}*: Atualiza informações de um empréstimo.
+* *DELETE /api/loans/{id}*: Cancela um empréstimo.
+
+Para acessar a documentação completa da API no Swagger, inicie o servidor backend e acesse:
+
+[source,sh]
+
+----
+
+http://localhost:8080/swagger-ui.html
+
+----
+
+== 🤝Contribuindo
+
+1. Faça um fork do repositório.
+2. Crie uma nova branch (git checkout -b feature-nome-da-feature).
+3. Faça as alterações e commit (git commit -am 'Adiciona nova feature').
+4. Envie para o repositório original (git push origin feature-nome-da-feature).
+5. Abra um pull request descrevendo as mudanças feitas.
+
 
 
 
