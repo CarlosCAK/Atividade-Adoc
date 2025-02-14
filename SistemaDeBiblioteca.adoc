@@ -29,6 +29,7 @@ O TaskFlow oferece uma variedade de recursos para facilitar o gerenciamento de t
 
 == 🎮 Como Executar
 1.**Clone o repositório**:
+
 Clone o repositório para o seu ambiente local com o comando
 
 [source,sh]
@@ -38,6 +39,7 @@ git clone https://github.com/usuario/sistema-biblioteca.git
 ----
 
 2.**Instale as Dependências do Frontend**:
+
 Navegue até o diretório do frontend e instale as dependências com npm:
 
 [source,sh]
@@ -50,6 +52,7 @@ npm install
 ----
 
 3.**Instale as Dependências do Backend**:
+
 Navegue até o diretório do backend e instale as dependências com Maven:
 
 [source,sh]
@@ -62,6 +65,7 @@ mvn install
 ----
 
 4.**Configuração do Banco de Dados**:
+
 Crie um banco de dados MySQL e configure as credenciais no arquivo application.properties do backend. Em seguida, execute as migrações para criar as tabelas necessárias:
 
 [source,sh]
@@ -75,6 +79,7 @@ spring.datasource.password=sua_senha
 ----
 
 5.**Inicie o Servidor Backend**:
+
 Inicie o servidor do backend com o comando:
 
 [source,sh]
@@ -87,6 +92,7 @@ mvn spring-boot:run
 
 
 6.**Inicie o Servidor Frontend**:
+
 Inicie o servidor do frontend com o comando:
 
 [source,sh]
@@ -98,6 +104,7 @@ ng serve
 ----
 
 7.**Acesse a Aplicação**:
+
 Abra o navegador e acesse a aplicação na URL: 
 
 [source,sh]
